@@ -309,7 +309,7 @@ protected:
         std::for_each (m_msgs.begin(), m_msgs.end(),
             [&, this](Msg msg) {
                 write_msg(msg);
-            };
+            }
         );
         m_msgs_mux.unlock();
     }
